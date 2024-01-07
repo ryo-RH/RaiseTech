@@ -5,7 +5,8 @@
 <br>
 
 ## VPC 構築
-![lecture04-1]![VPC 構築 エビデンス](https://github.com/ryo-RH/RaiseTech/assets/147240434/44a6ff5e-50cc-4a95-b4bb-b21022957fe1)
+![VPC構築](./vpc.1-img)
+
 ![VPC  CIDER 　　　　エビデンス](https://github.com/ryo-RH/RaiseTech/assets/147240434/4f079983-d483-4537-a643-00d4dc4c347d)
 
 
