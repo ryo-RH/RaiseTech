@@ -5,7 +5,7 @@
 <br>
 
 ## VPC 構築
-![VPC構築](./vpc.1-img)
+![VPC構築](./vpc.1-img/png)
 
 ![VPC  CIDER 　　　　エビデンス](https://github.com/ryo-RH/RaiseTech/assets/147240434/4f079983-d483-4537-a643-00d4dc4c347d)
 
