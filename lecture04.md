@@ -12,7 +12,8 @@
 
 ## EC2 構築
 ![EC2構築](./EC2.1-img.png)
-### EC2 セキュリティーグループ
+
+## EC2 セキュリティーグループ
 ![EC2](./EC2.2-img.png)
 
 <br>
@@ -32,12 +33,13 @@
 
 <br>
 <br>
+<br>
 
      
-### EC2にSSH接続してから、EC2にMySQLをインストール
+### * EC2にSSH接続してから、EC2にMySQLをインストール
 - $ sudo yum install mysql
 
-### RDSへの接続
+### * RDSへの接続
 - $ mysql -u admin -p -h データベースのエンドポイント
 - パスワード入力が求められるので、設定したパスワードを入力する
 
