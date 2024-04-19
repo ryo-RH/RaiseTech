@@ -1,47 +1,52 @@
 # <第4回課題>
 
 ## VPC (Virtual Private Cloud)
-  - AWS 内で作成する仮想ネットワークのこと
-<br>
+- AWS 内で作成する仮想ネットワークのこと
 
-## VPC 構築
-![VPC構築](./VPC.1-img.png)
+## 1.VPC 構築
+![VPC詳細](images/VPC-lec04.png)
 
+- ### 1-2.VPC リソースマップ
+![VPC2](images/VPC2-lec04.png)
 
-<br>
+- ### 1-3.VPC サブネット
+![サブネット1](images/subnet-1-public.png)
+![サブネット2](images/subnet-2-private.png)
+![サブネット3](images/subnet-3-public.png)
+![サブネット4](images/subnet-4-private.png)
 
-## EC2 構築
-![EC2構築](./EC2.1-img.png)
+<br><br>
+## 2.EC2 構築
+![EC2詳細](images/EC2-lec04.png)
+<br><br>
+## 3.RDS 構築
+![RDS詳細](images/RDS-lec04.png)
+<br><br>
 
-## EC2 セキュリティーグループ
-![EC2](./EC2.2-img.png)
+## 4.セキュリティグループ
+- ### 4-1. EC2
+![EC2-sg](images/EC2-sg.png)
+- ### 4-2. RDS-インバウンド
+![RDS-sg](images/RDS-sgｲﾝﾊﾞｳﾝﾄﾞ.png)
+- ### 4-3. RDS-アウトバウンド
+![RDS-sg](images/RDS-sgｱｳﾄﾊﾞｳﾝﾄﾞ.png)
 
-<br>
-<br>
+<br><br>
 
-
-## RDS 構築
-![RDS構築](./RDS.1-img.png)
-
-
-<br>
-<br>
-
-## EC2からRDSへ接続
-![EC2からRDSへの接続](./EC2-RDSへの接続.img.png)
-
-
-<br>
-<br>
-<br>
-
-     
-### * EC2にSSH接続してから、EC2にMySQLをインストール
-- $ sudo yum install mysql
-
-### * RDSへの接続
-- $ mysql -u admin -p -h データベースのエンドポイント
-- パスワード入力が求められるので、設定したパスワードを入力する
-
-
-
+## 5. EC2からRDSへ接続
+- ### 5-1. EC2にSSH接続してから、EC2にMySQLをインストール
+ - $ sudo yum install mysql  
+ 
+ - ![MySQLインストール](images/MySQL-install.png)
+ 
+　#### 最初、MySQLのインストールが出来ないエラーが発生
+　- このエラーについて色々と原因を追及し試した上で、最終的にネットワークACLが原因だと理解し、確認して変更したことで解決する
+　
+　- ![ネットワークACL変更前](images/ﾈｯﾄﾜｰｸACL-before.png)
+　- ![ネットワークACL変更後](images/ﾈｯﾄﾜｰｸACL-after.png)
+　
+- ### 5-2. RDSへの接続
+ - $ mysql -u admin -p -h データベースのエンドポイント
+ - パスワード入力が求められるので、設定したパスワードを入力する
+ 
+ - ![RDSへの接続](images/EC2-RDS-lec04.png)
