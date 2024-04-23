@@ -27,9 +27,9 @@
 - ### 4-1. EC2
 ![EC2-sg](images/EC2-sg.png)
 - ### 4-2. RDS-インバウンド
-![RDS-sg](images/RDS-sgｲﾝﾊﾞｳﾝﾄﾞ.png)
+![RDS-sg](images/images/RDS-sg ｲﾝﾊﾞｳﾝﾄﾞ.png)
 - ### 4-3. RDS-アウトバウンド
-![RDS-sg](images/RDS-sgｱｳﾄﾊﾞｳﾝﾄﾞ.png)
+![RDS-sg](images/RDS-sg ｱｳﾄﾊﾞｳﾝﾄﾞ.png)
 
 <br><br>
 
@@ -37,13 +37,14 @@
 - ### 5-1. EC2にSSH接続してから、EC2にMySQLをインストール
  - $ sudo yum install mysql  
  
- - ![MySQLインストール](images/MySQL-install.png)
+ - ![MySQLインストール](images/MySQL- install.png)
  
-　#### 最初、MySQLのインストールが出来ないエラーが発生
+　
+- #### 最初、MySQLのインストールが出来ないエラーが発生
 　- このエラーについて色々と原因を追及し試した上で、最終的にネットワークACLが原因だと理解し、確認して変更したことで解決する
 　
-　- ![ネットワークACL変更前](images/ﾈｯﾄﾜｰｸACL-before.png)
-　- ![ネットワークACL変更後](images/ﾈｯﾄﾜｰｸACL-after.png)
+　- ![ネットワークACL変更前](images/ ﾈｯﾄﾜｰｸACL-before.png)
+　- ![ネットワークACL変更後](images/ ﾈｯﾄﾜｰｸACL-after.png)
 　
 - ### 5-2. RDSへの接続
  - $ mysql -u admin -p -h データベースのエンドポイント
