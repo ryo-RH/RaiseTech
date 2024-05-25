@@ -30,9 +30,8 @@
 ![EC2-sg](images/EC2-sg.png)
 - ### 4-2. RDS-sgインバウンド
 ![RDS-sgインバウンド](images/RDS-sgインバウンド.png)
-
 - ### 4-3. RDS-sgアウトバウンド
-![RDS-sgアウトバウンド](images/RDS-sgアウトバウンド.png)
+![RDS-sgアウトバウンド](images/RDS-sgアウトバウンド.png)
 
 <br><br>
 
