@@ -23,6 +23,10 @@
 
 ## 3.RDS 構築
 ![RDS詳細](images/RDS-lec04.png)
+
+- ### 3-1. RDSサブネットグループ
+![RDS-subnet-group](images/RDS-subnet-group.png)
+
 <br><br>
 
 ## 4.セキュリティグループ
